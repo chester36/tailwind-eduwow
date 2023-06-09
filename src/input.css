@@ -6,6 +6,8 @@
     @apply mx-auto p-[1.5rem] w-full max-w-[140rem] lg:max-w-[80rem];
 }
 
+
+
 @layer components{
 
     /** ---------- MOBILE HEADER ---------- */
@@ -210,7 +212,71 @@
         @apply max-h-fit p-[1rem] w-[15rem] opacity-100
     }
 
+    .banner{
+        @apply bg-bgbanner bg-center bg-cover bg-no-repeat min-h-[60vh]
+    }
+
+    .banner__text{
+        @apply mt-[7rem] mb-[3.5rem] text-center font-sans 
+    }
+
+    .banner__text h2{
+        @apply font-bold text-[24px]
+    }
+    .banner__text h3{
+        @apply font-bold text-[24px]
+    }
+    .banner__text p{
+        @apply font-semibold text-[20px]
+    }
+
+    .banner__button ul li a{
+        @apply text-[17px]
+    }
 
 
+    .slider1__content__items{
+        @apply  border-2 border-green-200 rounded-lg py-[4rem] text-center mb-3
+    }
+    .slider1__content__items:hover{
+        @apply shadow-2xl
+    }
+    .slider1__content__items img{
+        @apply mx-auto mb-4
+    }
+    .slider1__content__items h3{
+        @apply font-bold text-[22px] cursor-pointer
+    }
+    .slider1__content__items h3:hover{
+        @apply text-primary
+    }
+    .slider1__content__items h4{
+        @apply text-primary text-[20px]
+    }
+     
+    .cards{
+        @apply bg-shape bg-center bg-cover bg-no-repeat
+    }
+    .cards__head{
+        @apply justify-center text-center mb-10
+    }
+    .cards__head h2{
+        @apply text-green-600 font-bold text-[25px]
+    }
+    .cards__head h3{
+        @apply font-bold text-[25px]
+    }
 
+    .cards__content__items{
+        @apply border-2 bg-white border-white pb-10 
+    }
+    .cards__text{
+        @apply mx-2 mt-5
+    }
+    .cards__user p span:hover{
+        @apply text-dark
+    }
+    .cards__user p span{
+        @apply font-bold
+    }
 }
